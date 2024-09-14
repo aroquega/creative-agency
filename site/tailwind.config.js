@@ -10,6 +10,9 @@ export default {
         red: "#F94F4F",
         black: "#191921",
       },
+      backgroundImage: {
+        "hero-tablet": "url('/src/assets/tablet/image-hero.jpg')",
+      },
     },
   },
   plugins: [],

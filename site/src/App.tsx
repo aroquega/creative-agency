@@ -12,16 +12,32 @@ import { BulletItem } from "./components/BulletItem";
 function App() {
   return (
     <>
-      <header className="py-10 px-6 flex justify-between items-center">
-        <img src={logo} />
-        <img src={menu} />
+      <header className="flex md:items-stretch">
+        <div className="py-10 px-6 flex items-center justify-between flex-1">
+          <img src={logo} />
+          <div className="md:hidden">
+            <img src={menu} />
+          </div>
+        </div>
+        <nav className="hidden md:block bg-red h-full py-[57px] pl-[33px] pr-10">
+          <ul className="flex h-full space-x-5 text-white items-center">
+            <li>About</li>
+            <li>Service</li>
+            <li>Projects</li>
+            <li>
+              <button className="bg-black pt-[23px] px-[19px] pb-[21px] font-extrabold leading-tight">
+                Schedule a Call
+              </button>
+            </li>
+          </ul>
+        </nav>
       </header>
-      <img src={heroMobile} alt="Our Team" />
-      <div className="px-6 pt-14 pb-24">
-        <h1 className="text-[40px] font-extrabold">
+      <img className="md:hidden" src={heroMobile} alt="Our Team" />
+      <div className="px-6 md:px-[39px] md:pb-[150px] pt-14 md:pt-[77px] pb-24 md:bg-hero-tablet bg-no-repeat bg-right">
+        <h1 className="text-[40px] md:text-[56px] max-w-[398px] font-extrabold leading-none h-[181px]">
           Branding & website design agency
         </h1>
-        <p className="text-[15px] mt-[15px] mb-10">
+        <p className="max-w-[398px] text-[15px] mt-[15px] md:mt-[24px] mb-10 md:mb-8 font-normal leading-normal h-[75px]">
           We specialize in visual storytelling by creating cohesive brand and
           website design solutions for small businesses, giving lasting
           impressions to audiences in a digital world.
