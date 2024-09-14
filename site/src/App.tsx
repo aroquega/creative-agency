@@ -1,0 +1,94 @@
+import heroMobile from "./assets/mobile/image-hero.jpg";
+import imageStrategic from "./assets/mobile/image-strategic.jpg";
+import imageSlide from "./assets/mobile/image-slide-1.jpg";
+import logo from "./assets/logo.svg";
+import menu from "./assets/mobile/icon-hamburger.svg";
+
+import iconPrev from "./assets/icon-arrow-previous.svg";
+import iconNext from "./assets/icon-arrow-next.svg";
+
+import { BulletItem } from "./components/BulletItem";
+
+function App() {
+  return (
+    <>
+      <header className="py-10 px-6 flex justify-between items-center">
+        <img src={logo} />
+        <img src={menu} />
+      </header>
+      <img src={heroMobile} alt="Our Team" />
+      <div className="px-6 pt-14 pb-24">
+        <h1 className="text-[40px] font-extrabold">
+          Branding & website design agency
+        </h1>
+        <p className="text-[15px] mt-[15px] mb-10">
+          We specialize in visual storytelling by creating cohesive brand and
+          website design solutions for small businesses, giving lasting
+          impressions to audiences in a digital world.
+        </p>
+        <button className="bg-red py-[25px] px-10 font-extrabold text-white">
+          Learn More
+        </button>
+      </div>
+      <img src={imageStrategic} alt="" />
+      <div className="px-6 bg-black text-white py-[72px]">
+        <h2 className="font-extrabold text-[32px] mb-6">
+          <span className="text-red">Design </span>is strategic.
+        </h2>
+        <p className="mb-10">
+          “A well-crafted design strategy consistently produces desired outcomes
+          and brand awareness. We are firm believers that success lies in
+          creative collaboration with our clients.”
+        </p>
+        <button className="text-red font-extrabold text-[15px] border-b-2 border-red p-[9px]">
+          Schedule a Call
+        </button>
+      </div>
+      <div className="bg-red px-6 py-24 text-white">
+        <h2 className="text-[32px] font-extrabold">
+          Our approach for creating a winning brand
+        </h2>
+        <ul className="mt-[49px] space-y-10">
+          <BulletItem order="01" title="Brand Strategy">
+            Brand strategy is critical for long-term success. Outshining
+            competitors and capturing the target audience are key.
+          </BulletItem>
+          <BulletItem order="02" title="Brand Design">
+            Keeping the brand design unique and meaningful helps in
+            communicating the brand’s value effectively.
+          </BulletItem>
+          <BulletItem order="03" title="Web Design">
+            A beautifully crafted website is the best tool for brand awareness,
+            and ultimately results in increased revenues.
+          </BulletItem>
+        </ul>
+      </div>
+      <div>
+        <img src={imageSlide} />
+        <div className="bg-black py-16 px-6">
+          <h2 className="text-white font-extrabold text-[32px] mb-6">
+            Brand naming & guidelines
+          </h2>
+          <div className="space-x-4">
+            <button>
+              <img src={iconPrev} />
+            </button>
+            <button>
+              <img src={iconNext} />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="py-[100px] px-6">
+        <h2 className="text-[32px] font-extrabold mb-[47px]">
+          Let's build something great together.
+        </h2>
+        <button className="bg-red py-[25px] px-10 font-extrabold text-white">
+          Schedule a Call
+        </button>
+      </div>
+    </>
+  );
+}
+
+export default App;
