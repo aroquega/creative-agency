@@ -2,16 +2,13 @@ import heroMobile from "./assets/mobile/image-hero.jpg";
 import imageStrategic from "./assets/mobile/image-strategic.jpg";
 import imageStrategicTablet from "./assets/tablet/image-strategic.jpg";
 import imageStrategicDesktop from "./assets/desktop/image-strategic.jpg";
-import imageSlide from "./assets/mobile/image-slide-1.jpg";
-import imageSlideTablet from "./assets/tablet/image-slide-1.jpg";
-import imageSlideDesktop from "./assets/desktop/image-slide-1.jpg";
+
 import logo from "./assets/logo.svg";
 import menu from "./assets/mobile/icon-hamburger.svg";
 
-import iconPrev from "./assets/icon-arrow-previous.svg";
-import iconNext from "./assets/icon-arrow-next.svg";
-
 import { BulletItem } from "./components/BulletItem";
+import { Carousel } from "./components/Carousel";
+import { Slide1, Slide2, Slide3 } from "./components/slides";
 
 function App() {
   return (
@@ -89,25 +86,7 @@ function App() {
         </ul>
       </div>
       <div className="sm:flex sm:flex-row-reverse sm:items-start">
-        <img src={imageSlide} className="sm:hidden w-full" />
-        <img
-          src={imageSlideTablet}
-          className="hidden sm:block xl:hidden flex-1"
-        />
-        <img src={imageSlideDesktop} className="hidden xl:block flex-1" />
-        <div className="bg-black py-16 px-6 sm:-mr-10 xl:-mr-[190px] relative sm:py-[100px] sm:pl-[39px] sm:pr-[70px] lg:pt-[152px] lg:pl-[165px] lg:pr-[125px]">
-          <h2 className="text-white font-extrabold text-[32px] xl:text-[56px] mb-6 leading-none">
-            Brand naming & guidelines
-          </h2>
-          <div className="space-x-4">
-            <button>
-              <img src={iconPrev} />
-            </button>
-            <button>
-              <img src={iconNext} />
-            </button>
-          </div>
-        </div>
+        <Carousel images={[<Slide1 />, <Slide2 />, <Slide3 />]} />
       </div>
       <div className="py-[100px] px-6 md:flex md:items-center md:space-x-24 justify-between sm:px-10 xl:px-[165px]">
         <h2 className="text-[32px] xl:text-[56px] font-extrabold mb-[47px] sm:mb-0">
