@@ -53,9 +53,12 @@ export function Carousel({ images }: Props) {
 
   return (
     <>
-      <div className="flex overflow-hidden" ref={slidesContainer}>
+      <div
+        className="flex overflow-x-auto lg:overflow-hidden snap-x snap-mandatory"
+        ref={slidesContainer}
+      >
         {images.map((i, idx) => (
-          <div key={idx} className="min-w-full" ref={slideReference}>
+          <div key={idx} className="min-w-full snap-start" ref={slideReference}>
             {i}
           </div>
         ))}
