@@ -14,7 +14,7 @@ export function BulletItem({ order, title, children }: Props) {
         <h3 className="text-[15px] font-extrabold mb-5 leading-none">
           {title}
         </h3>
-        <p className="text-[15px] font-normal w-[339px]">{children}</p>
+        <p className="text-[15px] font-normal md:w-[339px]">{children}</p>
       </div>
     </li>
   );

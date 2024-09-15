@@ -34,12 +34,12 @@ function App() {
           </ul>
         </nav>
       </header>
-      <img className="md:hidden" src={heroMobile} alt="Our Team" />
-      <div className="px-6 md:px-[39px] md:pb-[150px] pt-14 md:pt-[77px] pb-24 md:bg-hero-tablet bg-no-repeat bg-right">
-        <h1 className="text-[40px] md:text-[56px] max-w-[398px] font-extrabold leading-none h-[181px]">
+      <img className="sm:hidden w-full" src={heroMobile} alt="Our Team" />
+      <div className="px-6 md:px-[39px] md:pb-[150px] pt-14 md:pt-[77px] pb-24 sm:bg-hero-tablet bg-no-repeat bg-right">
+        <h1 className="sm:max-w-[398px] text-[40px] md:text-[56px] font-extrabold leading-none h-[181px]">
           Branding & website design agency
         </h1>
-        <p className="max-w-[398px] text-[15px] mt-[15px] md:mt-[24px] mb-10 md:mb-8 font-normal leading-normal h-[75px]">
+        <p className="sm:max-w-[398px] text-[15px] mt-[15px] md:mt-[24px] mb-10 md:mb-8 font-normal leading-normal h-[75px]">
           We specialize in visual storytelling by creating cohesive brand and
           website design solutions for small businesses, giving lasting
           impressions to audiences in a digital world.
@@ -48,10 +48,10 @@ function App() {
           Learn More
         </button>
       </div>
-      <div className="md:flex">
-        <img src={imageStrategic} alt="" className="md:hidden" />
-        <img src={imageStrategicTablet} />
-        <div className="px-6 bg-black text-white py-[72px] md:pt-[120px] md:pl-[69px] md:pr-[40px] text-[15px]">
+      <div className="sm:flex">
+        <img src={imageStrategic} alt="" className="sm:hidden w-full" />
+        <img src={imageStrategicTablet} className="hidden sm:block" />
+        <div className="px-6 bg-black text-white py-[72px] sm:pt-[120px] md:pl-[69px] md:pr-[40px] text-[15px]">
           <h2 className="font-extrabold text-[32px] mb-6 leading-tight">
             <span className="text-red">Design </span>is
             <br className="hidden md:block" /> strategic.
@@ -67,7 +67,7 @@ function App() {
         </div>
       </div>
       <div className="bg-red md:bg-inherit px-6 py-24 md:p-0 text-white md:flex">
-        <h2 className="text-[32px] font-extrabold md:text-black pt-[126px] pl-[39px]">
+        <h2 className="text-[32px] font-extrabold md:text-black md:pt-[126px] md:pl-[39px]">
           Our approach for creating a winning brand
         </h2>
         <ul className="mt-[49px] md:-mt-[120px] space-y-10 md:bg-red z-10 relative md:py-[120px] md:pl-[43px] md:pr-[40px]">
@@ -85,10 +85,10 @@ function App() {
           </BulletItem>
         </ul>
       </div>
-      <div className="md:flex md:flex-row-reverse md:items-start">
-        <img src={imageSlide} className="md:hidden" />
-        <img src={imageSlideTablet} className="hidden md:block" />
-        <div className="bg-black py-16 px-6 md:-mr-10 relative md:py-[100px] md:pl-[39px] md:pr-[70px]">
+      <div className="sm:flex sm:flex-row-reverse sm:items-start">
+        <img src={imageSlide} className="sm:hidden w-full" />
+        <img src={imageSlideTablet} className="hidden sm:block" />
+        <div className="bg-black py-16 px-6 sm:-mr-10 relative sm:py-[100px] sm:pl-[39px] sm:pr-[70px]">
           <h2 className="text-white font-extrabold text-[32px] mb-6">
             Brand naming & guidelines
           </h2>
@@ -102,7 +102,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="py-[100px] px-6 md:flex md:items-center">
+      <div className="py-[100px] px-6 md:flex md:items-center md:space-x-24">
         <h2 className="text-[32px] font-extrabold mb-[47px]">
           Let's build something great together.
         </h2>
