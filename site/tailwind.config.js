@@ -12,6 +12,7 @@ export default {
       },
       backgroundImage: {
         "hero-tablet": "url('/src/assets/tablet/image-hero.jpg')",
+        "hero-desktop": "url('/src/assets/desktop/image-hero.jpg')",
       },
     },
   },
