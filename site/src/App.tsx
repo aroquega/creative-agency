@@ -4,6 +4,7 @@ import imageStrategicTablet from "./assets/tablet/image-strategic.jpg";
 import imageStrategicDesktop from "./assets/desktop/image-strategic.jpg";
 import imageSlide from "./assets/mobile/image-slide-1.jpg";
 import imageSlideTablet from "./assets/tablet/image-slide-1.jpg";
+import imageSlideDesktop from "./assets/desktop/image-slide-1.jpg";
 import logo from "./assets/logo.svg";
 import menu from "./assets/mobile/icon-hamburger.svg";
 
@@ -89,9 +90,10 @@ function App() {
       </div>
       <div className="sm:flex sm:flex-row-reverse sm:items-start">
         <img src={imageSlide} className="sm:hidden w-full" />
-        <img src={imageSlideTablet} className="hidden sm:block" />
-        <div className="bg-black py-16 px-6 sm:-mr-10 relative sm:py-[100px] sm:pl-[39px] sm:pr-[70px]">
-          <h2 className="text-white font-extrabold text-[32px] mb-6">
+        <img src={imageSlideTablet} className="hidden sm:block lg:hidden" />
+        <img src={imageSlideDesktop} className="hidden lg:block" />
+        <div className="bg-black py-16 px-6 sm:-mr-10 lg:-mr-[190px] relative sm:py-[100px] sm:pl-[39px] sm:pr-[70px] lg:pt-[152px] lg:pl-[165px] lg:pr-[125px]">
+          <h2 className="text-white font-extrabold text-[32px] lg:text-[56px] mb-6 leading-none">
             Brand naming & guidelines
           </h2>
           <div className="space-x-4">
@@ -104,9 +106,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="py-[100px] px-6 md:flex md:items-center md:space-x-24">
-        <h2 className="text-[32px] font-extrabold mb-[47px]">
-          Let's build something great together.
+      <div className="py-[100px] px-6 md:flex md:items-center md:space-x-24 justify-between lg:px-[165px]">
+        <h2 className="text-[32px] lg:text-[56px] font-extrabold mb-[47px]">
+          Let's build something
+          <br /> great together.
         </h2>
         <button className="bg-red py-[25px] px-10 font-extrabold text-white text-nowrap">
           Schedule a Call
