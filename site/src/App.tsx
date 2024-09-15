@@ -1,6 +1,8 @@
 import heroMobile from "./assets/mobile/image-hero.jpg";
 import imageStrategic from "./assets/mobile/image-strategic.jpg";
+import imageStrategicTablet from "./assets/tablet/image-strategic.jpg";
 import imageSlide from "./assets/mobile/image-slide-1.jpg";
+import imageSlideTablet from "./assets/tablet/image-slide-1.jpg";
 import logo from "./assets/logo.svg";
 import menu from "./assets/mobile/icon-hamburger.svg";
 
@@ -46,25 +48,29 @@ function App() {
           Learn More
         </button>
       </div>
-      <img src={imageStrategic} alt="" />
-      <div className="px-6 bg-black text-white py-[72px]">
-        <h2 className="font-extrabold text-[32px] mb-6">
-          <span className="text-red">Design </span>is strategic.
-        </h2>
-        <p className="mb-10">
-          “A well-crafted design strategy consistently produces desired outcomes
-          and brand awareness. We are firm believers that success lies in
-          creative collaboration with our clients.”
-        </p>
-        <button className="text-red font-extrabold text-[15px] border-b-2 border-red p-[9px]">
-          Schedule a Call
-        </button>
+      <div className="md:flex">
+        <img src={imageStrategic} alt="" className="md:hidden" />
+        <img src={imageStrategicTablet} />
+        <div className="px-6 bg-black text-white py-[72px] md:pt-[120px] md:pl-[69px] md:pr-[40px] text-[15px]">
+          <h2 className="font-extrabold text-[32px] mb-6 leading-tight">
+            <span className="text-red">Design </span>is
+            <br className="hidden md:block" /> strategic.
+          </h2>
+          <p className="mb-10">
+            “A well-crafted design strategy consistently produces desired
+            outcomes and brand awareness. We are firm believers that success
+            lies in creative collaboration with our clients.”
+          </p>
+          <button className="text-red font-extrabold text-[15px] border-b-2 border-red p-[9px]">
+            Schedule a Call
+          </button>
+        </div>
       </div>
-      <div className="bg-red px-6 py-24 text-white">
-        <h2 className="text-[32px] font-extrabold">
+      <div className="bg-red md:bg-inherit px-6 py-24 md:p-0 text-white md:flex">
+        <h2 className="text-[32px] font-extrabold md:text-black pt-[126px] pl-[39px]">
           Our approach for creating a winning brand
         </h2>
-        <ul className="mt-[49px] space-y-10">
+        <ul className="mt-[49px] md:-mt-[120px] space-y-10 md:bg-red z-10 relative md:py-[120px] md:pl-[43px] md:pr-[40px]">
           <BulletItem order="01" title="Brand Strategy">
             Brand strategy is critical for long-term success. Outshining
             competitors and capturing the target audience are key.
@@ -79,9 +85,10 @@ function App() {
           </BulletItem>
         </ul>
       </div>
-      <div>
-        <img src={imageSlide} />
-        <div className="bg-black py-16 px-6">
+      <div className="md:flex md:flex-row-reverse md:items-start">
+        <img src={imageSlide} className="md:hidden" />
+        <img src={imageSlideTablet} className="hidden md:block" />
+        <div className="bg-black py-16 px-6 md:-mr-10 relative md:py-[100px] md:pl-[39px] md:pr-[70px]">
           <h2 className="text-white font-extrabold text-[32px] mb-6">
             Brand naming & guidelines
           </h2>
@@ -95,11 +102,11 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="py-[100px] px-6">
+      <div className="py-[100px] px-6 md:flex md:items-center">
         <h2 className="text-[32px] font-extrabold mb-[47px]">
           Let's build something great together.
         </h2>
-        <button className="bg-red py-[25px] px-10 font-extrabold text-white">
+        <button className="bg-red py-[25px] px-10 font-extrabold text-white text-nowrap">
           Schedule a Call
         </button>
       </div>

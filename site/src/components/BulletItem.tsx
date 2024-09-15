@@ -10,11 +10,11 @@ export function BulletItem({ order, title, children }: Props) {
       <p className="absolute top-0 left-0 font-extrabold text-[80px] opacity-25 leading-none">
         {order}
       </p>
-      <div className="pt-11 px-4">
+      <div className="pt-11 pl-4">
         <h3 className="text-[15px] font-extrabold mb-5 leading-none">
           {title}
         </h3>
-        <p className="text-[15px] font-normal">{children}</p>
+        <p className="text-[15px] font-normal w-[339px]">{children}</p>
       </div>
     </li>
   );
