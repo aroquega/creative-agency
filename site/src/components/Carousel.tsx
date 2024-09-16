@@ -2,6 +2,7 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 
 import iconPrev from "../assets/icon-arrow-previous.svg";
 import iconNext from "../assets/icon-arrow-next.svg";
+import whitePattern from "../assets/bg-pattern-wavy-white.svg";
 import { throttle } from "../utils";
 
 interface Props {
@@ -62,6 +63,10 @@ export function Carousel({ images }: Props) {
         ))}
       </div>
       <div className="bg-black py-16 px-6 sm:-mr-10 xl:-mr-[190px] relative sm:py-[100px] sm:pl-[39px] sm:pr-[70px] lg:pt-[152px] lg:pl-[165px] lg:pr-[125px]">
+        <img
+          src={whitePattern}
+          className="absolute top-[126px] right-0 translate-x-1/2 w-[62px] hidden sm:block xl:w-auto xl:top-[186px]"
+        />
         <h2 className="text-white font-extrabold text-[32px] xl:text-[56px] mb-6 leading-none">
           Brand naming & guidelines
         </h2>
