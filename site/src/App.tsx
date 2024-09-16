@@ -1,4 +1,5 @@
 import { BulletItem } from "./components/BulletItem";
+import { Button } from "./components/Button";
 import { Carousel } from "./components/Carousel";
 import { Slide1, Slide2, Slide3 } from "./components/slides";
 
@@ -39,9 +40,7 @@ function App() {
           Let's build something
           <br /> great together.
         </h2>
-        <button className="bg-red py-[25px] px-10 font-extrabold text-white text-nowrap">
-          Schedule a Call
-        </button>
+        <Button>Schedule a Call</Button>
       </div>
     </>
   );

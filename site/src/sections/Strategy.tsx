@@ -34,7 +34,7 @@ export function Strategy() {
           and brand awareness. We are firm believers that success lies in
           creative collaboration with our clients.”
         </Paragraph>
-        <Button variant="secondary">Schedule a Calla</Button>
+        <Button variant="secondary">Schedule a Call</Button>
       </div>
     </div>
   );
