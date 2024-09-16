@@ -7,6 +7,20 @@ import menu from "../assets/mobile/icon-hamburger.svg";
 import close from "../assets/mobile/icon-cross.svg";
 import { Button } from "../components/Button";
 
+interface MenuItemProps {
+  children: string;
+}
+
+function MenuItem({ children }: MenuItemProps) {
+  return (
+    <li
+      className={`inline-flex flex-col hover:font-bold after:content-['${children}'] after:invisible after:font-bold after:h-0 text-center overflow-hidden transition-all`}
+    >
+      <button>{children}</button>
+    </li>
+  );
+}
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,9 +38,9 @@ export function Header() {
       <Menu isOpen={isOpen} onClick={() => setIsOpen(false)} />
       <nav className="hidden md:block bg-red h-full py-[57px] pl-[33px] pr-10 xl:pl-[69px] lg:pr-[165px]">
         <ul className="flex h-full space-x-5 text-white items-center">
-          <li className="hover:font-bold px-1">About</li>
-          <li className="hover:font-bold px-1">Service</li>
-          <li className="hover:font-bold px-1">Projects</li>
+          <MenuItem>About</MenuItem>
+          <MenuItem>Service</MenuItem>
+          <MenuItem>Projects</MenuItem>
           <li>
             <Button variant="primary-2">Schedule a Call</Button>
           </li>

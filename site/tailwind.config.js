@@ -9,6 +9,8 @@ export default {
       colors: {
         red: "#F94F4F",
         black: "#191921",
+        "red-light": "#FF9393",
+        "black-light": "#434356",
       },
       backgroundImage: {
         "hero-tablet": "url('/src/assets/tablet/image-hero.jpg')",
