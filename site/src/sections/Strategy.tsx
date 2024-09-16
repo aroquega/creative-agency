@@ -10,6 +10,7 @@ export function Strategy() {
   return (
     <div className="sm:flex">
       <ResponsiveImage
+        className="sm:min-w-[378px] xl:min-w-[735px]"
         mobile={imageStrategic}
         tablet={imageStrategicTablet}
         desktop={imageStrategicDesktop}
