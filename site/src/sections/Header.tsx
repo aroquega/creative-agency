@@ -14,7 +14,8 @@ interface MenuItemProps {
 function MenuItem({ children }: MenuItemProps) {
   return (
     <li
-      className={`inline-flex flex-col hover:font-bold after:content-['${children}'] after:invisible after:font-bold after:h-0 text-center overflow-hidden transition-all`}
+      data-text={children}
+      className={`inline-flex flex-col hover:font-bold after:content-[attr(data-text)] after:invisible after:font-bold after:h-0 text-center transition-all`}
     >
       <button>{children}</button>
     </li>
