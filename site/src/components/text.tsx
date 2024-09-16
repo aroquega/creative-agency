@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 interface TextProps {
   className?: string;
-  children: string;
+  children: ReactNode;
 }
 
 export const Heading1 = (props: TextProps) => (
@@ -13,7 +15,11 @@ export const Heading1 = (props: TextProps) => (
   </h1>
 );
 
-export const Heading2 = (props: TextProps) => <h2>{props.children}</h2>;
+export const Heading2 = (props: TextProps) => (
+  <h2 className="font-extrabold text-[32px] xl:text-[56px] mb-6 leading-tight">
+    {props.children}
+  </h2>
+);
 
 export const Paragraph = (props: TextProps) => (
   <p
