@@ -15,7 +15,7 @@ function MenuItem({ children }: MenuItemProps) {
   return (
     <li
       data-text={children}
-      className={`inline-flex flex-col hover:font-bold after:content-[attr(data-text)] after:invisible after:font-bold after:h-0 text-center transition-all`}
+      className={`inline-flex flex-col justify-center items-center hover:font-bold after:content-[attr(data-text)] after:invisible after:font-bold after:h-0 text-center transition-all`}
     >
       <button>{children}</button>
     </li>
@@ -38,7 +38,7 @@ export function Header() {
       </div>
       <Menu isOpen={isOpen} onClick={() => setIsOpen(false)} />
       <nav className="hidden md:block bg-red h-full py-[57px] pl-[33px] pr-10 xl:pl-[69px] lg:pr-[165px]">
-        <ul className="flex h-full space-x-5 text-white items-center">
+        <ul className="flex h-full space-x-8 text-white items-center">
           <MenuItem>About</MenuItem>
           <MenuItem>Service</MenuItem>
           <MenuItem>Projects</MenuItem>

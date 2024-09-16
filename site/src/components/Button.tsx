@@ -11,7 +11,7 @@ function getButtonClass(variant: Props["variant"]) {
   }
 
   if (variant === "primary-2") {
-    return "bg-black hover:bg-black-light transition-colors pt-[23px] px-[19px] pb-[21px] font-extrabold leading-tight";
+    return "bg-black hover:bg-black-light transition-colors pt-[23px] px-[45px] pb-[21px] font-extrabold leading-tight";
   }
 
   if (variant === "secondary") {
