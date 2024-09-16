@@ -14,6 +14,7 @@ import slide3Desktop from "../assets/desktop/image-slide-3.jpg";
 
 export const Slide1 = () => (
   <ResponsiveImage
+    className="sm:max-w-[895px]"
     mobile={slide1Mobile}
     tablet={slide1Tablet}
     desktop={slide1Desktop}
@@ -22,6 +23,7 @@ export const Slide1 = () => (
 
 export const Slide2 = () => (
   <ResponsiveImage
+    className="sm:max-w-[895px]"
     mobile={slide2Mobile}
     tablet={slide2Tablet}
     desktop={slide2Desktop}
@@ -30,6 +32,7 @@ export const Slide2 = () => (
 
 export const Slide3 = () => (
   <ResponsiveImage
+    className="sm:max-w-[895px]"
     mobile={slide3Mobile}
     tablet={slide3Tablet}
     desktop={slide3Desktop}

@@ -11,9 +11,7 @@ interface Props {
 export function Carousel({ images }: Props) {
   const slidesContainer = useRef<HTMLDivElement>(null);
   const slideReference = useRef<HTMLDivElement>(null);
-
   const [slide, setSlide] = useState(0);
-  console.log("slide is ", slide);
 
   const handlePrevSlide = () => {
     let prevSlide = slide - 1;
