@@ -28,12 +28,12 @@ export function Header() {
   return (
     <header className="flex md:items-stretch relative">
       <div className="py-10 px-6 xl:pl-[165px] flex items-center justify-between flex-1 z-10 bg-white">
-        <img src={logo} />
+        <img src={logo} alt="Creative" />
         <button
           className="md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
         >
-          <img src={isOpen ? close : menu} />
+          <img src={isOpen ? close : menu} alt="menu" />
         </button>
       </div>
       <Menu isOpen={isOpen} onClick={() => setIsOpen(false)} />

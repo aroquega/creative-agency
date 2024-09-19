@@ -71,11 +71,14 @@ export function Carousel({ images }: Props) {
           Brand naming &<br /> guidelines
         </h2>
         <div className="space-x-4">
-          <button onClick={throttle(handlePrevSlide, 5000)}>
-            <img src={iconPrev} />
+          <button
+            onClick={throttle(handlePrevSlide, 5000)}
+            aria-label="previous"
+          >
+            <img src={iconPrev} alt="" />
           </button>
-          <button onClick={throttle(handleNextSlide, 5000)}>
-            <img src={iconNext} />
+          <button onClick={throttle(handleNextSlide, 5000)} aria-label="next">
+            <img src={iconNext} alt="" />
           </button>
         </div>
       </div>
