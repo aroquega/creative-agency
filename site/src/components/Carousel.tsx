@@ -67,8 +67,8 @@ export function Carousel({ images }: Props) {
           src={whitePattern}
           className="absolute top-[126px] right-0 translate-x-1/2 w-[62px] hidden sm:block xl:w-auto xl:top-[186px]"
         />
-        <h2 className="text-white font-extrabold text-[32px] xl:text-[56px] mb-6 leading-none">
-          Brand naming & guidelines
+        <h2 className="text-nowrap text-white font-extrabold text-[32px] xl:text-[56px] mb-6 leading-none">
+          Brand naming &<br /> guidelines
         </h2>
         <div className="space-x-4">
           <button onClick={throttle(handlePrevSlide, 5000)}>

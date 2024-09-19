@@ -17,7 +17,7 @@ function App() {
         <h2 className="text-[32px] xl:text-[56px] relative z-10 leading-none lg:max-w-[705px] lg:pt-[200px] lg:pl-[165px] font-extrabold md:text-black md:pt-[126px] md:pl-[39px]">
           Our approach for creating a winning brand
         </h2>
-        <ul className="mt-[49px] md:-mt-[120px] xl:flex-1 lg:-ml-[160px] lg:pr-[150px] space-y-10 md:bg-red relative md:py-[120px] md:pl-[43px] md:pr-[40px] lg:pl-[280px] lg:py-[200px]">
+        <ul className="mt-[49px] md:-mt-[120px] xl:-mt-[200px] xl:flex-1 lg:-ml-[160px] lg:pr-[150px] space-y-10 md:bg-red relative md:py-[120px] md:pl-[43px] md:pr-[40px] lg:pl-[285px] lg:py-[200px]">
           <BulletItem order="01" title="Brand Strategy">
             Brand strategy is critical for long-term success. Outshining
             competitors and capturing the target audience are key.

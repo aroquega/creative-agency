@@ -11,7 +11,7 @@ export function Hero() {
         <Heading1 className="sm:max-w-[398px] xl:max-w-[550px]">
           Branding & website design Agency
         </Heading1>
-        <Paragraph className="sm:max-w-[398px] xl:max-w-[540px] mt-[15px] md:mt-[24px] mb-10 md:mb-8">
+        <Paragraph className="sm:max-w-[398px] xl:max-w-[540px] mt-[15px] md:mt-[24px] xl:mt-10 mb-10 md:mb-8 xl:mb-12">
           We specialize in visual storytelling by creating cohesive brand and
           website design solutions for small businesses, giving lasting
           impressions to audiences in a digital world.
