@@ -66,6 +66,7 @@ export function Carousel({ images }: Props) {
         <img
           src={whitePattern}
           className="absolute top-[126px] right-0 translate-x-1/2 w-[62px] hidden sm:block xl:w-auto xl:top-[186px]"
+          alt=""
         />
         <h2 className="text-nowrap text-white font-extrabold text-[32px] xl:text-[56px] mb-6 leading-none">
           Brand naming &<br /> guidelines

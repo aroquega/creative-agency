@@ -13,6 +13,7 @@ export function Strategy() {
     <div className="sm:flex relative">
       <div className="relative flex-shrink-0">
         <img
+          alt=""
           src={redPattern}
           className="absolute top-0 left-6 -translate-y-1/2 sm:translate-y-0 w-14 sm:left-auto sm:right-0 sm:translate-x-1/2 sm:top-[145px] xl:top-[234px] xl:w-auto"
         />
